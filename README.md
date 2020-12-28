@@ -82,6 +82,39 @@ PurgoMalum also utilizes a list of "safe words", i.e. innocuous words which cont
 </table>
 
 
+### Negative Scenarios
+<table>
+<thead>
+  <tr>
+    <th>Test&nbsp;&nbsp;&nbsp;case ID</th>
+    <th>Description</th>
+    <th>HTTP Method</th>
+    <th>Type of&nbsp;&nbsp;&nbsp;Response</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>TC001</td>
+    <td>Scenario Outline: Empty Input Text   Valiadtion<br>     Given: API end   point  must be accessible <br>     When API end point is   hit without providing any Input Text along with expected   "&lt;Output_Format&gt;"    <br>     Then user should see   the error message in all expected "&lt;Output_Format&gt;"<br>     |Examples|<br>     |Output_Format|<br>     |XML|<br>     |JSON|<br>     |Pain-text|</td>
+    <td>GET</td>
+    <td>XML,JSON,Plain-text</td>
+  </tr>
+  <tr>
+    <td>TC002</td>
+    <td>Scenario Outline:  Verify Profinity word limit in the   Request<br>     Give : API end point   &lt;api_end_point&gt; must be accessible <br>     When API end point is   hit by providing  more than 10  "&lt;Profin_Word&gt;"  and "&lt;Input_Text&gt;"  along with conditional   statement,"&lt;Output_Format&gt;"<br>     Then user should see   the "&lt;Error_Message&gt;" in all expected   "&lt;Output_Format&gt;"<br>     |Examples|<br>     |Profin_Word|Error_Message|<br>     |vulgar,a,b,c,d,e,f,g,h,i,j,k,l|User Black List Exceeds Limit of 10   Words.<br>     </td>
+    <td>GET</td>
+    <td>XML,JSON,Plain-text</td>
+  </tr>
+  <tr>
+    <td>TC003</td>
+    <td>Scenario Outline:  Validate the response for HTTP method other   than GET<br>     Given : API end point   must be accessible <br>     When API end point is   hit by providing valid ""&lt;Input_Text&gt;""  using   ""&lt;Non_GET_HTTP_Method&gt;""<br>     Then user should able   to get the 405 status with message "Method Not Allowed"<br>     |Examples|<br>     |Input_Text|Non_GET_HTTP_Method|<br>     |This is a sample Test|POST|<br>     |This is a sample Test|PUT|<br>     |This is a sample Test|DELETE|<br>     "</td>
+    <td>GET</td>
+    <td>XML,JSON,Plain-text</td>
+  </tr>
+</tbody>
+</table>
+
+
 ## Test Case Execution 
 
 ## Observations/Defects
