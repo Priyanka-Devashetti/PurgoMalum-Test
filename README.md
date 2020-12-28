@@ -8,6 +8,7 @@ PurgoMalum is designed to remove words from input text, based on an internal pro
 PurgoMalum also utilizes a list of "safe words", i.e. innocuous words which contain words from the profanity list ("class" for example). These safe words are excluded from the filter.
 
 ## High Level Architecture
+<img width="721" alt="Screenshot 2020-12-28 at 6 55 23 PM" src="https://user-images.githubusercontent.com/58664897/103237072-7aaead00-493e-11eb-8b92-016c37b642d3.png">
 
 
 ## Testing Approach
