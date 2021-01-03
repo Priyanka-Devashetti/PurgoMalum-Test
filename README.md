@@ -117,7 +117,34 @@ PurgoMalum also utilizes a list of "safe words", i.e. innocuous words which cont
 </table>
 
 
+## Non-Functional Scenarios
+<table>
+<thead>
+  <tr>
+    <th>Test case   ID</th>
+    <th>Description</th>
+    <th>HTTP Method</th>
+    <th>Response Format</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>TC001</td>
+    <td>Scenario   Outline: Concurrent Request Validation to check performance<br>     Given: API end point  must be   accessible <br>     When API end point is hit by &lt;N&gt;    concurrent requests wih valid Input Text along with expected   "&lt;Output_Format&gt;" <br>     Then we must obtain the response in the well within the &lt;Threshold&gt;   time and in expected "&lt;Output_Format&gt;"<br>     |Examples|<br>     |Output_Format|<br>     |XML|<br>     |JSON|<br>     |Pain-text|</td>
+    <td>GET</td>
+    <td>XML/JSON/Pain-Text</td>
+  </tr>
+  <tr>
+    <td>TC001</td>
+    <td>Scenario   Outline: Profinity List Growth shouldn't affect API performance<br>     Given: API end point  must be   accessible and huge volume profinity list is updated in the backend DB<br>     When API end point is hit by &lt;N&gt;    concurrent requests wih valid Input Text along with expected   "&lt;Output_Format&gt;" <br>     Then we must obtain the response in the well within the &lt;Threshold&gt;   time and in expected "&lt;Output_Format&gt;"<br>     |Examples|<br>     |Output_Format|<br>     |XML|<br>     |JSON|<br>     |Pain-text|</td>
+    <td>GET</td>
+    <td>XML/JSON/Pain-Text</td>
+  </tr>
+</tbody>
+</table>
+
 ## Test Case Execution 
+
 
 ## Observations/Defects
 
