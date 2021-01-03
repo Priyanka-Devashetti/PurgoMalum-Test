@@ -143,8 +143,5 @@ PurgoMalum also utilizes a list of "safe words", i.e. innocuous words which cont
 </tbody>
 </table>
 
-## Test Case Execution 
 
-
-## Observations/Defects
 
