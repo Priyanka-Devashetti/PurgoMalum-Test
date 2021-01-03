@@ -17,6 +17,7 @@ PurgoMalum also utilizes a list of "safe words", i.e. innocuous words which cont
 - Objective is to utilize the same test case template for automation. 
 - Placeholder is provided in the test cases to externalize the input parameters which enforces parameter externalization and avoids code coupling.
 - Test Cases are executed using Postman
+- We have added sample Test Automation code using Rest-Assured.
 
 ## Test-Cases
 ### Positive Scenarios
