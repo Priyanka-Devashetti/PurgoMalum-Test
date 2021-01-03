@@ -68,9 +68,5 @@ public class ApiAutomation {
 		
 		Assert.assertEquals(405, statusCode);
 	}
-	
-	
-	
-	
 
 }
